@@ -18,12 +18,27 @@ body {
   flex-direction: column;
   text-align: center;
   font-family: "Poppins", sans-serif;
-  background: url("https://media.giphy.com/media/aRZ4vTsHnyW6A/giphy.gif")
-    no-repeat fixed center;
+  background: whitesmoke;
   background-size: cover;
   color: whitesmoke;
+  border:3px solid  rgba(18, 201, 64, 0.247);
+  background-color:   rgba(18, 201, 64, 0.247);
+  margin: 14px 0;
+padding-top: 20px;
+margin: 1rem 0;
+border: 1px solid #f0eee9;
+list-style-type: none;
+    margin: 05px;
+    padding: 05px;
+    width: inherit;
 }
-
+header strong{
+  text-align: right;
+  margin: 20px;
+  margin-top: 40px;
+  color: #e4d720;
+  padding: 30%;
+}
 h1 {
   font-size: 22px;
   color: #42f2f7;
@@ -37,7 +52,7 @@ h1 {
   text-align: center;
   margin: 20px;
   margin-top: 40px;
-  color: #42f2f7;
+  color: black;
 }
 
 .tagline {
@@ -51,8 +66,8 @@ h1 {
 .header-pic{
   max-width: 300px;
   width: 50%;
-  margin-left: 300px;
-  align-items: center;
+  margin-right: 300px;
+  
   
 }
 header{
@@ -475,10 +490,9 @@ span {
 
 @media only screen and (min-width: 1200px) {
   .header-pic {
-    max-width: 40%;
+    max-width: 300px;
     margin-top: 10px;
-    margin-left: 50%;
-    margin-right: 50%;
-    align-items: center;
+    margin-left: 10px;
+    
   }
 }
