@@ -1,3 +1,4 @@
+
 @import url("https://fonts.googleapis.com/css?family=Ubuntu");
 @import url("https://fonts.googleapis.com/css?family=Major+Mono+Display");
 @import url("https://fonts.googleapis.com/css?family=Noto+Serif+SC");
@@ -343,7 +344,24 @@ h4 {
   justify-content: space-evenly;
   align-items: flex-start;
 }
-
+.form-description{
+  color: #121616;
+}
+.submit input:hover {
+  background-color: #efc93e10;
+}
+.search-age{
+  color: #121616;
+}
+.search-size-dog{
+  color: #121616;
+}
+.flex{
+  color: #121616;
+}
+p, search-zip{
+  color: #121616;
+}
 #modal .additional-images img {
   flex: 1;
   max-width: 20%;
