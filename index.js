@@ -1,10 +1,11 @@
+
 const searchURL =
-  "https://api.rescuegroups.org/v5/public/animals/search/?fields[animals]=";
+  "https://api.rescuegroups.org/v5/public/animals/search/?fields${animals}=";
 
 let animalType = "";
 
 function displayResults(responseJson) {
-
+  const proxy ="https://cors-anywhere.herokuapp.com/";
 
   $("#results-list").empty();
   if (responseJson.meta.count == 0) {
@@ -52,29 +53,30 @@ function displayResults(responseJson) {
       }
 
       if (!orgHTML.length) {
-        orgHTML.push("No Info Available");
+        orgHTML.push("No Info the Available");
       }
-
-      $("#results-list").append(`
+// Here is where we handle the results we got back from org
+       $("#results-list").append(`
     <div class="card" data-orgs="${orgHTML}" data-pictures="${pictureHTML}" data-description="${
         result.attributes.descriptionText
-      }" data-name="${result.attributes.name}"  data-sex="${result.attributes.sex}" data-size=" 
+      }" data-name="${result.attributes.name}" data-breed="${
+        result.attributes.breedPrimary
+      }" data-sex="${result.attributes.sex}" data-size=" 
     ${result.attributes.sizeGroup}" data-age="${result.attributes.ageGroup}">
         <img alt="Pet Picture" class="card-image" src="${
           result.attributes.pictureThumbnailUrl
             ? result.attributes.pictureThumbnailUrl
-            : "images/logos.png"
+            : "images/logo.png"
         } " />
         <div class="card-container">
           <h4>${result.attributes.name} </h4>
-          
+          <p>${result.attributes.breedPrimary}</p>
           <p class="age-size">${
             result.attributes.ageGroup ? result.attributes.ageGroup : ""
           } </p>
           <p class="age-size">${
             result.attributes.sex ? result.attributes.sex : ""
           }</p>
-          
           <p class="age-size">${
             result.attributes.sizeGroup ? result.attributes.sizeGroup : ""
           }</p>
@@ -259,9 +261,9 @@ function renderModal() {
 
     $("#modal p.description").text(description);
     $("#modal p.org-name").text(org[0]);
-    $("#modal p.org-email").html(`<a href="mailto:${org[2]}">Email</a>`);
+    $("#modal p.org-email").html(`<a href="mailto:${org[2]}">Email -Not available</a>`);
     $("#modal p.org-url").html(
-      `<a href="${org[3]}" target="_blank">Website</a>`
+      `<a href="${org[2]}" target="_blank">Website</a>`
     );
 
     $("#overlay").fadeIn();

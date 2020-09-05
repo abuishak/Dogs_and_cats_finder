@@ -68,23 +68,29 @@ h1 {
   max-width: 300px;
   width: 50%;
   margin-right: 300px;
-  
+  box-shadow:0px 2px 2px 1px black;
+    padding: 1px;
+    font-size: 1rem;
   
 }
 header{
   display: flex;
   align-items: center;
   justify-content: space-between;
+  
 }
 .main-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  
 }
 
 .main-nav a:link {
   text-decoration: none;
   color: #121616;
+  border-radius: 1px;
+    
 }
 
 .main-nav a:visited {
@@ -134,12 +140,18 @@ header{
   max-width: 300px;
   width: 50%;
   margin-right: 50px;
+  box-shadow:0px 2px 2px 1px black;
+    padding: 1px;
+    font-size: 1rem;
 }
 
 .dog-pic {
   max-width: 300px;
   width: 50%;
   margin-left: 50px;
+  box-shadow:0px 2px 2px 1px black;
+    padding: 1px;
+    font-size: 1rem;
 }
 
 .pic-dog {
@@ -215,13 +227,7 @@ p.form-description {
   display: inline-block;
 }
 
-.search-breed-cat {
-  display: none;
-}
 
-.search-breed-dog {
-  display: none;
-}
 
 .submit-cat {
   display: none;
@@ -406,7 +412,6 @@ div .additional-images {
 
 
 
-.breed,
 .age,
 .sex,
 .size {
