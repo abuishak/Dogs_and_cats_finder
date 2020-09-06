@@ -261,7 +261,7 @@ function renderModal() {
 
     $("#modal p.description").text(description);
     $("#modal p.org-name").text(org[0]);
-    $("#modal p.org-email").html(`<a href="mailto:${org[1]}">Email: </a>`);
+    $("#modal p.org-email").text(`Email :${org[1]}`);
     $("#modal p.org-url").html(
       `<a href="${org[2]}" target="_blank">Website</a>`
     );
