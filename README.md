@@ -1,3 +1,3 @@
 # Dogs_and_cats_finder
-# Please open the link and I mention app preview:
-https://gist.github.com/abuishak/ad2f7e522e73e43ac0f325b61f041d90
+# About :
+![Capture16](https://user-images.githubusercontent.com/39011865/92456387-78a2c180-f188-11ea-8f20-21850b6450d7.JPG)
