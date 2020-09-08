@@ -405,9 +405,10 @@ div .additional-images {
 }
 
 
+
 .pet-image img {
-  max-width: 600px;
-  min-width: 300px;
+  max-width: 320px;
+  min-width: 320px;
 }
 
 .pet-info {
