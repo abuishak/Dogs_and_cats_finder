@@ -5,5 +5,7 @@
 # Screenshots how to use this App:
 ![Capture13](https://user-images.githubusercontent.com/39011865/92458104-9ffa8e00-f18a-11ea-96da-0f4ae3e70aac.JPG)
 ![Capture12](https://user-images.githubusercontent.com/39011865/92458547-29aa5b80-f18b-11ea-83e6-f53f84b69774.JPG)
+![Cats](https://user-images.githubusercontent.com/39011865/92458678-55c5dc80-f18b-11ea-9b03-7364462681c0.JPG)
+![Dogs](https://user-images.githubusercontent.com/39011865/92458685-58283680-f18b-11ea-9e08-c76db7e6dc27.JPG)
 
 
